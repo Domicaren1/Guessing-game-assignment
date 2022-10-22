@@ -3,9 +3,7 @@ const username = prompt("Enter username")
 //Welcome user using username
 console.log(`Hello ${username}`);
 
-let point = 0
-let levels = 1
-let maxRange = 10
+let point = 1
  for (let i = 2; i<10; i++){
    let random = Math.floor(Math.random()*i) +1;
    
@@ -14,6 +12,6 @@ let maxRange = 10
 if (myGuess !== random){
   myGuess = parseInt(prompt('Try again'));
   }if(myGuess = random){
-  myGuess = ('correct');
+  myGuess = parseInt(prompt(point++));
 }
  }
